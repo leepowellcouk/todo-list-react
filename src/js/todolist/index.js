@@ -35,11 +35,6 @@ const ToDoList = React.createClass({
     this.setState({ items: [] }, () => this.saveItems());
   },
 
-  handleClearCompleted: function () {
-    const items = this.state.items.filter((item) => !item.isCompleted);
-    this.setState({ items: items }, () => this.saveItems());
-  },
-
   handleItemCompleted: function (itemID, isCompleted) {
     var items = this.state.items;
 
@@ -74,8 +69,7 @@ const ToDoList = React.createClass({
     };
 
     const actionsProps = {
-      handleClearAll: this.handleClearAll,
-      handleClearCompleted: this.handleClearCompleted
+      handleClearAll: this.handleClearAll
     };
 
     return (

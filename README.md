@@ -1,6 +1,8 @@
 # To Do List - React
 Simple 'To Do' list built with JSPM, System.js and React.
 
+*NOTE: This requires at least Node v4.0.0 to run as it makes use of ES6*
+
 To install simply clone this repo to your local environment, fire up a terminal and change directory into the newly cloned root then execute:
 
      $ npm install

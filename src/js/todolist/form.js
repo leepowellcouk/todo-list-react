@@ -16,11 +16,11 @@ const Form = React.createClass({
         <div className="form-group">
           {/* Uncontrolled input - http://buildwithreact.com/article/form-elements */}
           <label className="sr-only">Description</label>
-          <span className="col-xs-12 col-sm-10">
+          <span className="col-xs-12 col-sm-9">
             <input className="form-control item-form__control" type="text" ref="input" placeholder="e.g. Collect the shopping" />
           </span>
-          <span className="col-xs-12 col-sm-2">
-            <button className="btn btn-primary btn-block" type="submit">Create</button>
+          <span className="col-xs-12 col-sm-3">
+            <button className="btn btn-primary btn-block" type="submit"><span className="glyphicon glyphicon-pencil"></span> Create</button>
           </span>
         </div>
       </form>
